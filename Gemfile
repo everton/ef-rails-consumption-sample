@@ -36,7 +36,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use mongoid as ODM to access MongoDB
+gem 'mongoid',  '4.0.0.beta1'
+
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0.beta'
-  gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-rails',        '~> 3.0.0.beta'
+  gem 'factory_girl_rails', '~> 4.0'
 end
