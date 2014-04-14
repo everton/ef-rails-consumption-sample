@@ -24,6 +24,8 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
 end
 
+require 'capybara/rspec'
+
 RSpec.configure do |config|
   # ## Mock Framework
   #

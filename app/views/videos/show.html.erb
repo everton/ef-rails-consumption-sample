@@ -1,0 +1,10 @@
+<h1><%= @video.title %></h1>
+
+<ul id="comments_list">
+  <% @video.comments.each do |comment| %>
+    <li class="comment">
+      <span>by: <%= comment.user %></span>
+      <%= comment.text %>
+    </li>
+  <% end %>
+</ul>

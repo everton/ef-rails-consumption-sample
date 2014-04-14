@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/videos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - localhost:3000
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"135e502ef45a1b373d67863995fa264e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 57ba9b49-0a45-4a7c-8893-448be1b30fc9
+      X-Runtime:
+      - '0.016279'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Mon, 14 Apr 2014 02:55:12 GMT
+      Content-Length:
+      - '931'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _video-publication-example_session=UzBtaks4elVWRHRvdWMzeW5yUUIvaExyWkpTSUgzaWdYRHVqS080bmF5U2NKYXhtK2hrR2ZPSngrODRkZE1OOHhIanE0TzBqMkFZMnI2RkprczhTTCttdllIM3dkUUZNVnNHa2ZQbzJCdndPMFV6T2k3VUxGdG9zWEFCR042YlMtLWQ4ZVZyT2RMeVNqVTlxQWxWRnR4bVE9PQ%3D%3D--79a12f32ef868a93bd19d101440f579e84fae627;
+        path=/; HttpOnly
+      - request_method=GET; path=/
+    body:
+      encoding: UTF-8
+      string: '[{"id":826300033,"title":"First Paul''s Test Video","description":"Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.","created_at":"2014-04-14T01:31:19.000Z","updated_at":"2014-04-14T01:31:19.000Z","user_id":354582103,"published":true},{"id":959424799,"title":"First
+        John''s Test Video","description":"Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.","created_at":"2014-04-14T01:31:19.000Z","updated_at":"2014-04-14T01:31:19.000Z","user_id":830138774,"published":true},{"id":1018728657,"title":"First
+        George''s Test Video","description":"Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.","created_at":"2014-04-14T01:31:19.000Z","updated_at":"2014-04-14T01:31:19.000Z","user_id":380982691,"published":true}]'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 02:55:12 GMT
+recorded_with: VCR 2.8.0

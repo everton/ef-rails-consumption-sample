@@ -15,6 +15,10 @@ class Video < OpenStruct
     Comment.where(video_id: self.id)
   end
 
+  def to_param
+    self.id.to_s
+  end
+
   private
   def self.get_json(path)
     uri = URI('http://localhost:3000/')
