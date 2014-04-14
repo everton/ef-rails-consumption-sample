@@ -17,3 +17,6 @@
 
 # Backup files
 /**/*~
+
+# Test coverage files
+/coverage
