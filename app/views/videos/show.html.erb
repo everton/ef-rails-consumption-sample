@@ -1,5 +1,16 @@
 <h1><%= @video.title %></h1>
 
+<p>
+  <strong>Description:</strong>
+  <%= @video.description %>
+</p>
+
+<video width="320" height="240" controls>
+  <source src="<%= video_url_of(@video, :mp4) %>" type="video/mp4" />
+  <source src="<%= video_url_of(@video, :ogg) %>" type="video/ogg" />
+Your browser does not support the video tag.
+</video>
+
 <ul id="comments_list">
   <% @video.comments.each do |comment| %>
     <li class="comment">

@@ -16,6 +16,14 @@ describe "videos/show.html.erb" do
 
   it 'shows the video' do
     expect(rendered).to have_content '1st test Video'
+
+    video_url = "#{Video::SITE}/videos/development/123/123"
+
+    expect(rendered).to have_selector 'video'
+
+    expect(rendered).to have_selector "video source[type='video/mp4'][src='#{video_url}.mp4']"
+
+    expect(rendered).to have_selector "video source[type='video/ogg'][src='#{video_url}.ogg']"
   end
 
   it 'list all videos comments' do
