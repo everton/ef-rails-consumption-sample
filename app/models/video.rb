@@ -16,7 +16,7 @@ class Video < OpenStruct
   end
 
   def to_param
-    self.id.to_s
+    self.id.to_s if self.id
   end
 
   private

@@ -41,4 +41,14 @@ describe Video do
 
     it { expect(comments.first).to eql video_comment }
   end
+
+  describe :to_param do
+    it 'returns stringfied version of id' do
+      expect(Video.new(id: 123).to_param).to eq '123'
+    end
+
+    it 'returns nil when there is no id' do
+      expect(Video.new.to_param).to be_nil
+    end
+  end
 end
