@@ -49,4 +49,5 @@ group :test do
   gem 'webmock'
   gem 'database_cleaner'
   gem 'capybara'
+  gem 'simplecov'
 end
