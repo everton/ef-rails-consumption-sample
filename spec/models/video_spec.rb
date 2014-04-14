@@ -26,4 +26,19 @@ describe Video do
     # We need to assert that the object was properly parsed
     it { expect(video.published).to be true }
   end
+
+  describe :comments, :vcr do
+    let!(:video_comment) { create :comment, video_id: '1018728657' }
+    let!(:other_comment) { create :comment }
+
+    let(:video) { Video.find '1018728657' }
+
+    subject(:comments) { video.comments }
+
+    it { is_expected.to be_an Enumerable }
+
+    it { expect(comments.size).to eq 1 }
+
+    it { expect(comments.first).to eql video_comment }
+  end
 end
