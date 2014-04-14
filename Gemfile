@@ -48,4 +48,5 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'database_cleaner'
+  gem 'capybara'
 end
